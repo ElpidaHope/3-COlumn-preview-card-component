@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+html{
+    padding: 70px 25px;
+}
+
+.sedans{
+    background-color: var(--Bright-orange);
+    border-radius: 5px 5px 0 0;
+}
+
+.sedans .button{
+    color: var(--Bright-orange);
+}
+
+.suvs{
+    background-color: var(--Dark-cyan);
+}
+
+.suvs .button{
+    color: var(--Dark-cyan);
+}
+
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 5px 5px;
+}
+
+.luxury .button{
+    color: var(--Very-dark-cyan);
+}
+
+.content h1{
+    text-transform: uppercase;
+    color: var(--Transparent-white);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+.content p{
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400px;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.content{
+    padding: 40px;
+    text-align: left;
+}
+
+.button{
+    background-color: var(--Very-light-gray);
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: inherit;
+    color: var(--Transparent-white);
+    border: 2px solid var(--Transparent-white);
+    transition: 0.2s ease-in-out;
+}
+
+img{
+    margin-bottom: 25px;
+}
+
+@media (min-width: 900px){
+    html{
+        padding: 150px 240px;
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;        
+    }
+    .content{
+        padding: 45px;
+        height: 100%;
+    }
+
+    .content p{
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    p{
+        padding-right: 20px;
+    }
+
+    .suvs p{
+        padding-right: 25px;
+    }
+    
+    .button{
+        margin-top: 60px;
+        width: 150px;
+        margin-bottom: 15px;  
+    }
+
+    .sedans{
+        border-radius: 5px 0 0 5px;
+    }
+
+    .luxury{
+        border-radius: 0 5px 5px 0;
+    }
+}
